@@ -44,44 +44,50 @@ https://northeastern-my.sharepoint.com/personal/kasireddy_y_northeastern_edu/_la
  	```
 6. Now that we built the priors we'll test our color correction algorithm. To Run the color correction we have two ways one is to run on a folder and the other is to run it on a single image.
 a) To run it on a folder Run
-	python apply_color_correction_v2.py `
-  		--data "C:\path\to\Adv_perc\test_images" `
+```bash
+	python apply_color_correction_v2.py
+  		--data "C:\path\to\Adv_perc\test_images"
   		--priors "C:\path\to\Adv_perc\data\color_priors.yaml"
-  		--model "C:\path\to\Adv_perc\yolov8s-seg.pt" `
-  		--conf 0.5 `
+  		--model "C:\path\to\Adv_perc\yolov8s-seg.pt"
+  		--conf 0.5 
   		--out_dir "C:\path\to\corrected_outputs"
-	The Input and output can be whatever you want.
+```
+The Input and output can be whatever you want.
 b) To run it on a single image Run
-	python apply_color_correction_v2.py `
-  		--image "C:\path\to\Adv_perc\test_images\img_1.jpg" `
+```bash
+	python apply_color_correction_v2.py
+  		--image "C:\path\to\Adv_perc\test_images\img_1.jpg" 
   		--priors "C:\path\to\Adv_perc\data\color_priors.yaml"
-  		--model "C:\path\to\Adv_perc\yolov8s-seg.pt" `
-  		--conf 0.5 `
+  		--model "C:\path\to\Adv_perc\yolov8s-seg.pt" 
+  		--conf 0.5 
   		--out_dir "C:\path\to\corrected_outputs"
+```
 
 
 
 Steps to run the analysis code:
 1. To Run this code you need to have the corrected images in one file and ground truth or original images in the other.
-2. Then Run the file - finaltests.py using the following command
+2. Then Run the file ```finaltests.py``` using the following command
 
+```bash
 python finaltests.py 
-	--data "C:\path\to\corrected_outputs" ` 
-	--priors "C:\path\to\Adv_perc\data\color_priors.yaml" `
+	--data "C:\path\to\corrected_outputs" 
+	--priors "C:\path\to\Adv_perc\data\color_priors.yaml" 
 	--gt_data "\path\to\ground_truth"
-
+```
 
 
 
 Steps to run the Extension:
  
-1. Run the File - inverseapproach.py with the following command  line arguments
- 
-python apply_color_correction_inverse.py `
-    --image "C:\path\to\test_image.jpg" `
-    --priors "C:\path\to\Adv_perc\data\color_priors.yaml" `
-    --method "inverse_semantic" `
+1. Run the File ```inverseapproach.py``` with the following command line arguments
+```bash
+python apply_color_correction_inverse.py 
+    --image "C:\path\to\test_image.jpg" 
+    --priors "C:\path\to\Adv_perc\data\color_priors.yaml" 
+    --method "inverse_semantic" 
     --out_dir "C:\path\to\outputs"
+```
  
 Arguments:
 - `--image` - Input image path
