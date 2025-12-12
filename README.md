@@ -31,14 +31,16 @@ Steps to run the algorithm:
 https://northeastern-my.sharepoint.com/personal/kasireddy_y_northeastern_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fkasireddy%5Fy%5Fnortheastern%5Fedu%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files%2Ftinted%5Fimages%2Ezip&parent=%2Fpersonal%2Fkasireddy%5Fy%5Fnortheastern%5Fedu%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files&ga=1
 
 3. Next step is to install the dependencies
+   ```bash
 	pip install numpy opencv-python pyyaml tqdm ultralytics
 	pip install torch
-4. Now we need to build the priors you can use any dataset you want but our method is currently optimized for the provided dataset in the drive use the full original folder to train the priors. Run
+   ```
+5. Now we need to build the priors you can use any dataset you want but our method is currently optimized for the provided dataset in the drive use the full original folder to train the priors. Run
 	python build_color_priors.py `
   		--data "C:\path\to\Adv_perc\original" `
   		--model "C:\path\to\Adv_perc\yolov8s-seg.pt" `
   		--out "C:\path\to\Adv_perc\data\color_priors.yaml"
-5. Now that we built the priors we'll test our color correction algorithm. To Run the color correction we have two ways one is to run on a folder and the other is to run it on a single image.
+6. Now that we built the priors we'll test our color correction algorithm. To Run the color correction we have two ways one is to run on a folder and the other is to run it on a single image.
 a) To run it on a folder Run
 	python apply_color_correction_v2.py `
   		--data "C:\path\to\Adv_perc\test_images" `
