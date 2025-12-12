@@ -36,10 +36,12 @@ https://northeastern-my.sharepoint.com/personal/kasireddy_y_northeastern_edu/_la
 	pip install torch
    ```
 5. Now we need to build the priors you can use any dataset you want but our method is currently optimized for the provided dataset in the drive use the full original folder to train the priors. Run
-	python build_color_priors.py `
-  		--data "C:\path\to\Adv_perc\original" `
-  		--model "C:\path\to\Adv_perc\yolov8s-seg.pt" `
+	```bash
+	python build_color_priors.py
+  		--data "C:\path\to\Adv_perc\original"
+  		--model "C:\path\to\Adv_perc\yolov8s-seg.pt"
   		--out "C:\path\to\Adv_perc\data\color_priors.yaml"
+ 	```
 6. Now that we built the priors we'll test our color correction algorithm. To Run the color correction we have two ways one is to run on a folder and the other is to run it on a single image.
 a) To run it on a folder Run
 	python apply_color_correction_v2.py `
