@@ -21,6 +21,7 @@ tinted_images/
 ├── blue_tint/      # Blue-tinted variants
 ├── orange_tint/    # Orange-tinted variants
 └── yellow_tint/    # Yellow-tinted variants
+'''
  
  
 Steps to run the algorithm:
