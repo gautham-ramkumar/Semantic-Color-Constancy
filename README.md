@@ -10,12 +10,17 @@ Steps to run data preparation for the project: (Not Recommended,but if needed)
 1. Download the Train 2017 Images and Annotations from COCO website
 2. Run the cocofilter_saveindices, applyfilter_rezip and apply tint files in order
 3. You will have the imagefiles in this format:
-tinted_images.zip
-├── original/        # Original unmodified images
-├── red_tint/        # Red-tinted variants
-├── blue_tint/       # Blue-tinted variants
-├── orange_tint/     # Orange-tinted variants
-└── yellow_tint/     # Yellow-tinted variants
+### Dataset Structure
+
+The dataset is organized as follows:
+
+```text
+tinted_images/
+├── original/       # Original unmodified images
+├── red_tint/       # Red-tinted variants
+├── blue_tint/      # Blue-tinted variants
+├── orange_tint/    # Orange-tinted variants
+└── yellow_tint/    # Yellow-tinted variants
  
  
 Steps to run the algorithm:
