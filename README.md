@@ -1,10 +1,14 @@
-"""
+```
 Author: Gautham Ramkumar, Yoga Srinivas Reddy Kasireddy, Sai Vamsi Rithvik Allanka
 Date: 2025-12-11
 CS7180 - Advanced Perception
-"""
+```
 OS Used: Windows(VS Code)
-Drive link for dataset: https://northeastern-my.sharepoint.com/personal/kasireddy_y_northeastern_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fkasireddy%5Fy%5Fnortheastern%5Fedu%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files%2Ftinted%5Fimages%2Ezip&parent=%2Fpersonal%2Fkasireddy%5Fy%5Fnortheastern%5Fedu%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files&ga=1
+
+Drive link for dataset: 
+```
+https://northeastern-my.sharepoint.com/personal/kasireddy_y_northeastern_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fkasireddy%5Fy%5Fnortheastern%5Fedu%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files%2Ftinted%5Fimages%2Ezip&parent=%2Fpersonal%2Fkasireddy%5Fy%5Fnortheastern%5Fedu%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files&ga=1
+```
  
 Steps to run data preparation for the project: (Not Recommended,but if needed)
 1. Download the Train 2017 Images and Annotations from COCO website
