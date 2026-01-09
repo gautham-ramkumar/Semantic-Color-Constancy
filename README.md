@@ -6,9 +6,7 @@ CS7180 - Advanced Perception
 OS Used: Windows(VS Code)
 
 Drive link for dataset: 
-```
 https://northeastern-my.sharepoint.com/personal/kasireddy_y_northeastern_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fkasireddy%5Fy%5Fnortheastern%5Fedu%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files%2Ftinted%5Fimages%2Ezip&parent=%2Fpersonal%2Fkasireddy%5Fy%5Fnortheastern%5Fedu%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files&ga=1
-```
  
 Steps to run data preparation for the project: (Not Recommended,but if needed)
 1. Download the Train 2017 Images and Annotations from COCO website
@@ -31,9 +29,7 @@ tinted_images/
 Steps to run the algorithm:
 1. Download the codes from the gradescope and put them in a folder (let's call it Adv_perc).
 2. Download the Original and Tinted Dataset from the Drive file below or from the report into the Adv_perc folder.
-```
 https://northeastern-my.sharepoint.com/personal/kasireddy_y_northeastern_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fkasireddy%5Fy%5Fnortheastern%5Fedu%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files%2Ftinted%5Fimages%2Ezip&parent=%2Fpersonal%2Fkasireddy%5Fy%5Fnortheastern%5Fedu%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files&ga=1
-```
 3. Next step is to install the dependencies
    ```bash
 	pip install numpy opencv-python pyyaml tqdm ultralytics
